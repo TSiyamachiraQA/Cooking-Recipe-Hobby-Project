@@ -2,6 +2,7 @@ package com.qa.services;
 
 import com.qa.domain.Ingredients;
 import com.qa.dto.IngredientsDTO;
+import com.qa.exceptions.IngredientsNotFoundException;
 import com.qa.repo.IngredientsRepo;
 import org.junit.Before;
 import org.junit.Test;
@@ -67,6 +68,31 @@ public class IngredientsServicesUnitTest {
         assertEquals(this.service.createIngredients(testIngredients), this.ingredientsDTO);
         verify(repository, times(1)).save(this.testIngredients);
     }
+
+    @Test
+    public void findNoteById(){
+        when(this.repository.findById(ingredientId)).thenReturn(java.util.Optional.ofNullable(testIngredientsWithID));
+        when(this.mapper.map(testIngredientsWithID, IngredientsDTO.class)).thenReturn(ingredientsDTO);
+        assertEquals(this.service.findIngredientById(this.ingredientId), ingredientsDTO);
+        verify(repository, times(1)).findById(ingredientId);
+    }
+
+    @Test
+    public void deleteIngredientsByExistingId(){
+        when(this.repository.existsById(ingredientId)).thenReturn(true, false);
+        assertFalse(service.deleteIngredients(ingredientId));
+        verify(repository, times(1)).deleteById(ingredientId);
+        verify(repository, times(2)).existsById(ingredientId);
+    }
+
+    @Test(expected = IngredientsNotFoundException.class)
+    public void deleteIngredientsByNonExistingId(){
+        when(this.repository.existsById(ingredientId)).thenReturn(false);
+        service.deleteIngredients(ingredientId);
+        verify(repository, times(1)).existsById(ingredientId);
+    }
+
+
 
 
 
