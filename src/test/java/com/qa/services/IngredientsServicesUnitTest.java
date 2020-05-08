@@ -35,7 +35,7 @@ public class IngredientsServicesUnitTest {
 
     private Ingredients testIngredients;
 
-    private long ingredientId;
+    private long ingredientId = 1L;
 
     private Ingredients testIngredientsWithID;
 
