@@ -23,6 +23,11 @@ public class Ingredients {
         this.ingredientType = ingredientType;
     }
 
+    public Ingredients(Long ingredientId, String ingredientName, String ingredientType) {
+        this.ingredientId = ingredientId;
+        this.ingredientName = ingredientName;
+        this.ingredientType = ingredientType;
+    }
 
     public Long getIngredientId() {
         return ingredientId;

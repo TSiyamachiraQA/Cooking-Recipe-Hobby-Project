@@ -36,4 +36,25 @@ public class IngredientsDTO {
     public void setIngredientType(String ingredientType) {
         this.ingredientType = ingredientType;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        IngredientsDTO that = (IngredientsDTO) o;
+
+        if (!ingredientId.equals(that.ingredientId)) return false;
+        if (!ingredientName.equals(that.ingredientName)) return false;
+        return ingredientType.equals(that.ingredientType);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = ingredientId.hashCode();
+        result = 31 * result + ingredientName.hashCode();
+        result = 31 * result + ingredientType.hashCode();
+        return result;
+    }
 }
+
