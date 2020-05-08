@@ -16,10 +16,13 @@ public class Ingredients {
     @ManyToOne(targetEntity = Recipes.class)
     private Recipes recipes;
 
+    public Ingredients(){}
+
     public Ingredients(String ingredientName, String ingredientType) {
         this.ingredientName = ingredientName;
         this.ingredientType = ingredientType;
     }
+
 
     public Long getIngredientId() {
         return ingredientId;
