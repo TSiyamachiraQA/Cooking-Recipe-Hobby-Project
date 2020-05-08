@@ -15,6 +15,19 @@ public class Recipes {
     private Long recipeServing;
     private String description;
 
+    public Recipes(Long recipeId, String recipeName, Long recipeServing, String description) {
+        this.recipeId = recipeId;
+        this.recipeName = recipeName;
+        this.recipeServing = recipeServing;
+        this.description = description;
+    }
+
+    public Recipes(String recipeName, Long recipeServing, String description) {
+        this.recipeName = recipeName;
+        this.recipeServing = recipeServing;
+        this.description = description;
+    }
+
     @OneToMany(mappedBy = "recipes", fetch = FetchType.LAZY)
     private List<Ingredients> ingredients = new ArrayList<>();
 
