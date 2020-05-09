@@ -2,7 +2,6 @@ package com.qa.controller;
 
 import com.qa.domain.Ingredients;
 import com.qa.dto.IngredientsDTO;
-import com.qa.repo.IngredientsRepo;
 import com.qa.services.IngredientsService;
 import org.junit.Before;
 import org.junit.Test;

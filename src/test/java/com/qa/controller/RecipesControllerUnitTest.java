@@ -1,10 +1,8 @@
 package com.qa.controller;
 
-import com.qa.domain.Ingredients;
+
 import com.qa.domain.Recipes;
-import com.qa.dto.IngredientsDTO;
 import com.qa.dto.RecipesDTO;
-import com.qa.services.IngredientsService;
 import com.qa.services.RecipesService;
 import org.junit.Before;
 import org.junit.Test;
