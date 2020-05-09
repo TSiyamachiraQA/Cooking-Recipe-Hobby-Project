@@ -1,12 +1,8 @@
 package com.qa.services;
 
-import com.qa.domain.Ingredients;
 import com.qa.domain.Recipes;
-import com.qa.dto.IngredientsDTO;
 import com.qa.dto.RecipesDTO;
-import com.qa.exceptions.IngredientsNotFoundException;
 import com.qa.exceptions.RecipesNotFoundException;
-import com.qa.repo.IngredientsRepo;
 import com.qa.repo.RecipesRepo;
 import org.junit.Before;
 import org.junit.Test;

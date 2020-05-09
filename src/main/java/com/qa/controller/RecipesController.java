@@ -27,7 +27,7 @@ public class RecipesController {
     }
 
     @PostMapping("/createRecipes")
-    public ResponseEntity<RecipesDTO> createIngredients(@RequestBody Recipes recipes){
+    public ResponseEntity<RecipesDTO> createRecipes(@RequestBody Recipes recipes){
         return new ResponseEntity<RecipesDTO>(this.service.createRecipes(recipes), HttpStatus.CREATED);
     }
 
