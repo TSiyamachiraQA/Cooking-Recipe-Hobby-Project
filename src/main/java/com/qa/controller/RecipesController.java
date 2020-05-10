@@ -1,5 +1,6 @@
 package com.qa.controller;
 
+import com.qa.domain.Ingredients;
 import com.qa.domain.Recipes;
 import com.qa.dto.RecipesDTO;
 import com.qa.services.RecipesService;
@@ -47,6 +48,11 @@ public class RecipesController {
     @PutMapping("/updateRecipes/{recipeId}")
     public ResponseEntity<RecipesDTO> updateRecipes(@PathVariable Long recipeId, @RequestBody Recipes recipes){
         return ResponseEntity.ok(this.service.updateRecipes(recipeId, recipes));
+    }
+
+    @PatchMapping("/addIngredientsToRecipes/{ingredientId}")
+    public ResponseEntity<RecipesDTO> addIngredientsToRecipes(@PathVariable Long ingredientId, @RequestBody Ingredients ingredients){
+        return new ResponseEntity<RecipesDTO>(this.service.addIngredientsToRecipes(ingredientId, ingredients), HttpStatus.ACCEPTED);
     }
 
 }

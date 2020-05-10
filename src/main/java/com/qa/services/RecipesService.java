@@ -1,8 +1,10 @@
 package com.qa.services;
 
+import com.qa.domain.Ingredients;
 import com.qa.domain.Recipes;
 import com.qa.dto.RecipesDTO;
 import com.qa.exceptions.RecipesNotFoundException;
+import com.qa.repo.IngredientsRepo;
 import com.qa.repo.RecipesRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,43 +16,53 @@ import java.util.stream.Collectors;
 @Service
 public class RecipesService {
 
-    private final RecipesRepo repo;
+    private final RecipesRepo recipesRepo;
+
+    private final IngredientsRepo ingredientsRepo;
 
     private final ModelMapper mapper;
 
     @Autowired
-    public RecipesService(RecipesRepo repo, ModelMapper mapper) {
-        this.repo = repo;
+    public RecipesService(RecipesRepo recipesRepo,IngredientsRepo ingredientsRepo, ModelMapper mapper) {
+        this.recipesRepo = recipesRepo;
+        this.ingredientsRepo = ingredientsRepo;
         this.mapper = mapper;
     }
     private RecipesDTO mapToDTO(Recipes recipes){return this.mapper.map(recipes, RecipesDTO.class);}
 
     public List<RecipesDTO> readRecipes(){
-        return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
+        return this.recipesRepo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
     }
 
-    public RecipesDTO createRecipes(Recipes recipes){return this.mapToDTO(this.repo.save(recipes));}
+    public RecipesDTO createRecipes(Recipes recipes){return this.mapToDTO(this.recipesRepo.save(recipes));}
 
     public RecipesDTO findRecipesById(Long recipeId){
-        return this.mapToDTO(this.repo.findById(recipeId).orElseThrow(RecipesNotFoundException::new));
+        return this.mapToDTO(this.recipesRepo.findById(recipeId).orElseThrow(RecipesNotFoundException::new));
     }
 
     public RecipesDTO updateRecipes(Long recipeId, Recipes recipes){
-        Recipes update = this.repo.findById(recipeId).orElseThrow(RecipesNotFoundException::new);
+        Recipes update = this.recipesRepo.findById(recipeId).orElseThrow(RecipesNotFoundException::new);
         update.setRecipeName(recipes.getRecipeName());
         update.setRecipeServing(recipes.getRecipeServing());
         update.setRecipeServing(recipes.getRecipeServing());
         update.setDescription(recipes.getDescription());
-        Recipes tempRecipes = this.repo.save(update);
+        Recipes tempRecipes = this.recipesRepo.save(update);
         return this.mapToDTO(tempRecipes);
     }
 
     public boolean deleteRecipes(Long recipeId){
-        if(!this.repo.existsById(recipeId)){
+        if(!this.recipesRepo.existsById(recipeId)){
             throw new RecipesNotFoundException();
         }
-        this.repo.deleteById(recipeId);
-        return this.repo.existsById(recipeId);
+        this.recipesRepo.deleteById(recipeId);
+        return this.recipesRepo.existsById(recipeId);
+    }
+
+    public RecipesDTO addIngredientsToRecipes(Long ingredientsId, Ingredients ingredients){
+        Recipes recipes = this.recipesRepo.findById(ingredientsId).orElseThrow(RecipesNotFoundException::new);
+        Ingredients tmp = this.ingredientsRepo.saveAndFlush(ingredients);
+        recipes.getIngredients().add(tmp);
+        return this.mapToDTO(this.recipesRepo.saveAndFlush(recipes));
     }
 
 
