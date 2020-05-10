@@ -16,10 +16,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.in;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.mockito.Mockito.*;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -56,12 +54,12 @@ public class IngredientsServicesIntegrationTest {
     }
 
     @Test
-    public void createNoteTest(){
+    public void createIngredientsTest(){
         assertEquals(this.mapToDTO(this.testIngredientsWithID), this.service.createIngredients(testIngredients));
     }
 
     @Test
-    public void findNoteByIdTest(){
+    public void findIngredientsByIdTest(){
         assertThat(this.service.findIngredientById(this.testIngredientsWithID.getIngredientId())).isEqualTo(this.mapToDTO(this.testIngredientsWithID));
     }
 
