@@ -1,7 +1,5 @@
 package com.qa.dto;
 
-import com.qa.domain.Ingredients;
-
 import java.util.ArrayList;
 import java.util.List;
 

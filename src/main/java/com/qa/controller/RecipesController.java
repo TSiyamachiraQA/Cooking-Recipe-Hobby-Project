@@ -51,8 +51,8 @@ public class RecipesController {
     }
 
     @PatchMapping("/addIngredientsToRecipes/{ingredientId}")
-    public ResponseEntity<RecipesDTO> addIngredientsToRecipes(@PathVariable Long ingredientId, @RequestBody Ingredients ingredients){
-        return new ResponseEntity<RecipesDTO>(this.service.addIngredientsToRecipes(ingredientId, ingredients), HttpStatus.ACCEPTED);
+    public ResponseEntity<RecipesDTO> addIngredientsToRecipes(@PathVariable Long ingredientId, @RequestBody Ingredients recipes){
+        return new ResponseEntity<RecipesDTO>(this.service.addIngredientsToRecipes(ingredientId, recipes), HttpStatus.ACCEPTED);
     }
 
 }
