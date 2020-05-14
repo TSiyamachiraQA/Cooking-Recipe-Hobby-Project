@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Recipes {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long recipeId;
 
     private String recipeName;
@@ -92,8 +92,8 @@ public class Recipes {
         return description.equals(recipes.description);
     }
 
-    @Override
-    public int hashCode() { return Objects.hash(recipeId, recipeName, recipeServing, description);}
+//    @Override
+//    public int hashCode() { return Objects.hash(recipeId, recipeName, recipeServing, description);}
 }
 
 

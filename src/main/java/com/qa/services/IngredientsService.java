@@ -45,7 +45,7 @@ public class IngredientsService {
             Ingredients update = this.ingredientsRepo.findById(ingredientId).orElseThrow(IngredientsNotFoundException::new);
             update.setIngredientName(ingredient.getIngredientName());
             update.setIngredientType(ingredient.getIngredientType());
-            Ingredients tempIngredients = this.ingredientsRepo.save(ingredient);
+            Ingredients tempIngredients = this.ingredientsRepo.save(update);
             return this.mapToDTO(tempIngredients);
         }
 

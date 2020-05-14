@@ -38,6 +38,11 @@ public class IngredientsDTO {
     }
 
     @Override
+    public String toString(){
+        return "IngredientsDTO [ingredientsId=" + ingredientId + ", ingredientName=" + ingredientName + ", ingredientType" + ingredientType + "]";
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

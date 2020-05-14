@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Ingredients {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ingredientId;
 
     private String ingredientName;
@@ -67,8 +67,8 @@ public class Ingredients {
                 Objects.equals(ingredientType, that.ingredientType);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(ingredientId, ingredientName, ingredientType);
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(ingredientId, ingredientName, ingredientType);
+//    }
 }
