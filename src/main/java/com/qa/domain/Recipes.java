@@ -1,11 +1,16 @@
 package com.qa.domain;
 
+import org.w3c.dom.stylesheets.LinkStyle;
+
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
-import java.util.Objects;
+import java.util.Set;
+
 
 @Entity
+@Table(name = "recipes")
 public class Recipes {
 
     @Id
@@ -15,6 +20,18 @@ public class Recipes {
     private String recipeName;
     private Long recipeServing;
     private String description;
+
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "ingredients_recipes",
+            joinColumns = {
+                    @JoinColumn(name = "ingredient_id",referencedColumnName = "recipeId",
+                            nullable = false, updatable = false)},
+            inverseJoinColumns = {
+                    @JoinColumn(name = "recipe_id",referencedColumnName = "ingredientId",
+                            nullable = false, updatable = false)})
+    private final List<Ingredients> ingredients = new ArrayList<>();
+
 
     public Recipes(Long recipeId, String recipeName, Long recipeServing, String description) {
         this.recipeId = recipeId;
@@ -28,9 +45,6 @@ public class Recipes {
         this.recipeServing = recipeServing;
         this.description = description;
     }
-
-    @OneToMany(mappedBy = "recipes", fetch = FetchType.LAZY)
-    private List<Ingredients> ingredients = new ArrayList<>();
 
     public Recipes(){}
 
@@ -74,10 +88,28 @@ public class Recipes {
         return ingredients;
     }
 
-    public void setIngredients(List<Ingredients> ingredients) {
-        this.ingredients = ingredients;
+
+
+    @Override
+    public String toString() {
+        return "Recipes{" +
+                "recipeId=" + recipeId +
+                ", recipeName='" + recipeName + '\'' +
+                ", recipeServing=" + recipeServing +
+                ", description='" + description + '\'' +
+                ", ingredients=" + ingredients +
+                '}';
     }
 
+    @Override
+    public int hashCode() {
+        int result = recipeId.hashCode();
+        result = 31 * result + recipeName.hashCode();
+        result = 31 * result + recipeServing.hashCode();
+        result = 31 * result + description.hashCode();
+        result = 31 * result + ingredients.hashCode();
+        return result;
+    }
 
     @Override
     public boolean equals(Object o) {
