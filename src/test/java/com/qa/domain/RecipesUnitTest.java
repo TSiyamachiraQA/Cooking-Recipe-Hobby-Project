@@ -58,11 +58,6 @@ public class RecipesUnitTest {
     }
 
 
-    @Test
-    public void recipeNameNullButOtherNameNotNull() {
-        recipes.setRecipeName(null);
-        assertFalse(recipes.equals(other));
-    }
 
     @Test
     public void recipeNamesNotEqual() {
@@ -71,12 +66,6 @@ public class RecipesUnitTest {
     }
 
 
-
-    @Test
-    public void nullId() {
-        recipes.setRecipeId(null);
-        assertFalse(recipes.equals(other));
-    }
 
 
 

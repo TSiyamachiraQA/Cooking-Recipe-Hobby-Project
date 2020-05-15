@@ -39,8 +39,8 @@ public class RecipesServicesIntegrationTes {
 
     @Before
     public void setUp(){
-        this.testRecipes = new Recipes("Chicken Fried Rice",4L,"This is a famous..");
         this.repository.deleteAll();
+        this.testRecipes = new Recipes("Chicken Fried Rice",4L,"This is a famous..");
         this.testRecipesWithID = this.repository.save(this.testRecipes);
     }
 

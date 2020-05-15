@@ -57,11 +57,6 @@ public class IngredientsUnitTest {
         assertTrue(ingredients.equals(other));
     }
 
-    @Test
-    public void ingredientsNameNullButOtherNameNotNull() {
-        ingredients.setIngredientName(null);
-        assertFalse(ingredients.equals(other));
-    }
 
     @Test
     public void ingredientsNamesNotEqual() {
@@ -69,43 +64,11 @@ public class IngredientsUnitTest {
         assertFalse(ingredients.equals(other));
     }
 
-    @Test
-    public void checkEqualityBetweenDifferentObjectsNullName() {
-        ingredients.setIngredientName(null);
-        other.setIngredientName(null);
-        assertTrue(ingredients.equals(other));
-    }
-
-    @Test
-    public void nullIngedientsId() {
-        ingredients.setIngredientId(null);
-        assertFalse(ingredients.equals(other));
-    }
-
-    @Test
-    public void nullIngredientsIdOnBoth() {
-        ingredients.setIngredientId(null);
-        other.setIngredientId(null);
-        assertTrue(ingredients.equals(other));
-    }
 
     @Test
     public void otherIngredientsIdDifferent() {
         other.setIngredientId(2L);
         assertFalse(ingredients.equals(other));
-    }
-
-    @Test
-    public void nullType() {
-        ingredients.setIngredientType(null);
-        assertFalse(ingredients.equals(other));
-    }
-
-    @Test
-    public void nullIngredientsTypeOnBoth() {
-        ingredients.setIngredientType(null);
-        other.setIngredientType(null);
-        assertTrue(ingredients.equals(other));
     }
 
     @Test
@@ -126,11 +89,6 @@ public class IngredientsUnitTest {
     public void hashCodeTest() {
         assertEquals(ingredients.hashCode(), other.hashCode());
     }
-    @Test
-    public void hashCodeTestWithNull() {
-        Ingredients customer = new Ingredients(null, null);
-        Ingredients other = new Ingredients(null, null);
-        assertEquals(customer.hashCode(), other.hashCode());
-    }
+
 
 }
