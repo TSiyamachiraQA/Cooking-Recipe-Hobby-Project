@@ -58,10 +58,10 @@ public class RecipesService {
         return this.recipesRepo.existsById(recipeId);
     }
 
-    public RecipesDTO addIngredientsToRecipes(Long ingredientsId, Ingredients ingredients){
-        Recipes recipes = this.recipesRepo.findById(ingredientsId).orElseThrow(RecipesNotFoundException::new);
-        Ingredients tmp = this.ingredientsRepo.saveAndFlush(ingredients);
-        recipes.getIngQuantity().add(tmp);
+    public RecipesDTO addIngredientsToRecipes( Long recipeId, Long ingredientsId){
+        Recipes recipes = this.recipesRepo.findById(recipeId).orElseThrow(RecipesNotFoundException::new);
+        Ingredients ingredients = this.ingredientsRepo.findById(ingredientsId).orElseThrow(RecipesNotFoundException::new);
+        recipes.getIngredients().add(ingredients);
         return this.mapToDTO(this.recipesRepo.saveAndFlush(recipes));
     }
 

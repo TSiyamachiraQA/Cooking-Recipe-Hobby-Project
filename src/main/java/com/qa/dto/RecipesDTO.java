@@ -1,11 +1,17 @@
 package com.qa.dto;
 
+import com.qa.controller.IngredientsController;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class RecipesDTO {
 
     private Long recipeId;
     private String recipeName;
     private Long recipeServing;
     private String description;
+    private List<IngredientsDTO> ingredients = new ArrayList<>();
 
     public RecipesDTO(){}
 
@@ -45,5 +51,13 @@ public class RecipesDTO {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public List<IngredientsDTO> getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(List<IngredientsDTO> ingredients) {
+        this.ingredients = ingredients;
     }
 }

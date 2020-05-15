@@ -1,21 +1,22 @@
 package com.qa.domain;
 
 import javax.persistence.*;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 @Entity
-public class Ingredients extends IngredientInRecipes {
+@Table(name = "ingredients")
+public class Ingredients {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ingredientId;
 
     private String ingredientName;
     private String ingredientType;
 
-    @OneToMany(mappedBy = "ingredients")
-    Set<IngredientInRecipes> ingQuantity;
+
+    @ManyToMany(mappedBy = "ingredients", fetch = FetchType.EAGER)
+     private final List<Recipes> recipes = new ArrayList<>();
 
     public Long getIngredientId() {
         return ingredientId;
@@ -41,26 +42,40 @@ public class Ingredients extends IngredientInRecipes {
         this.ingredientType = ingredientType;
     }
 
-    public Set<IngredientInRecipes> getIngQuantity() {
-        return ingQuantity;
+    public List<Recipes> getRecipes() {
+        return recipes;
     }
 
-    public void setIngQuantity(Set<IngredientInRecipes> ingQuantity) {
-        this.ingQuantity = ingQuantity;
+
+    @Override
+    public String toString() {
+        return "Ingredients{" +
+                "ingredientId=" + ingredientId +
+                ", ingredientName='" + ingredientName + '\'' +
+                ", ingredientType='" + ingredientType + '\'' +
+                ", recipes=" + recipes +
+                '}';
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         Ingredients that = (Ingredients) o;
-        return Objects.equals(ingredientId, that.ingredientId) &&
-                Objects.equals(ingredientName, that.ingredientName) &&
-                Objects.equals(ingredientType, that.ingredientType);
+
+        if (!ingredientId.equals(that.ingredientId)) return false;
+        if (!ingredientName.equals(that.ingredientName)) return false;
+        if (!ingredientType.equals(that.ingredientType)) return false;
+        return recipes.equals(that.recipes);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ingredientId, ingredientName, ingredientType);
+        int result = ingredientId.hashCode();
+        result = 31 * result + ingredientName.hashCode();
+        result = 31 * result + ingredientType.hashCode();
+        result = 31 * result + recipes.hashCode();
+        return result;
     }
 }

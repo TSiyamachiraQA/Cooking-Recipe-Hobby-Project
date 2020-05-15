@@ -49,4 +49,9 @@ public class RecipesController {
         return ResponseEntity.ok(this.service.updateRecipes(recipeId, recipes));
     }
 
+    @PutMapping("/addIngredientsToRecipes/{recipeId}")
+    public ResponseEntity<RecipesDTO>addIngredientsToRec(@PathVariable Long recipeId, @RequestBody Long ingredientId){
+        return ResponseEntity.ok(this.service.addIngredientsToRecipes(recipeId, ingredientId));
+    }
+
 }
