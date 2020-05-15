@@ -2,9 +2,10 @@ package com.qa.domain;
 
 import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
-public class Ingredients {
+public class Ingredients extends IngredientInRecipes {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -13,8 +14,8 @@ public class Ingredients {
     private String ingredientName;
     private String ingredientType;
 
-    @ManyToOne(targetEntity = Recipes.class)
-    private Recipes recipes;
+    @OneToMany(mappedBy = "ingredients")
+    Set<IngredientInRecipes> ingQuantity;
 
     public Long getIngredientId() {
         return ingredientId;
@@ -40,9 +41,13 @@ public class Ingredients {
         this.ingredientType = ingredientType;
     }
 
-    public Recipes getRecipes() { return recipes; }
+    public Set<IngredientInRecipes> getIngQuantity() {
+        return ingQuantity;
+    }
 
-    public void setRecipes(Recipes recipes) {this.recipes = recipes; }
+    public void setIngQuantity(Set<IngredientInRecipes> ingQuantity) {
+        this.ingQuantity = ingQuantity;
+    }
 
     @Override
     public boolean equals(Object o) {
