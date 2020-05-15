@@ -373,8 +373,9 @@ a.next1 {
 
 .box {
 	background-color: #eeeef2;
-	padding: 10px 10px 12px;
+	padding: 12px 12px 12px;
 	text-align: center;
+	font-size: 18px;
 }
 
 a.gal {

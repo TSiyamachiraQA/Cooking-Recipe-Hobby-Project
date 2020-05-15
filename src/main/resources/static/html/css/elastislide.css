@@ -6,7 +6,7 @@
 }
 
 .no-js .elastislide-list {
-	display: block;
+	display: compact;
 }
 
 .elastislide-carousel ul li {
@@ -40,7 +40,7 @@
 
 .elastislide-carousel {
 	overflow: hidden;
-	position: relative;
+	position: center;
 }
 
 .elastislide-carousel ul {
@@ -81,8 +81,8 @@
 }
 
 .elastislide-carousel ul li a img {
-	display: block;
-	max-width: 100%;
+	display: compact;
+	max-width: 120%;
 	margin: 5px 0 6px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .elastislide-wrapper:after {
-	content: 'Top Products';
+	content: 'Top Recipes';
 	font: 19px/41px 'Glegoo', serif;
 	left: 0;
 	right: 0;
@@ -105,7 +105,7 @@
 }
 
 .elastislide-horizontal.elastislide-wrapper:after {
-	content: 'What People Say';
+	content: 'Recipe Reviews';
 	font: 19px/41px 'Glegoo', serif;
 	left: 0;
 	right: 0;
