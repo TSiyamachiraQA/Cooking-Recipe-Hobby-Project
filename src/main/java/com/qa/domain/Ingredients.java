@@ -18,6 +18,19 @@ public class Ingredients {
     @ManyToMany(mappedBy = "ingredients", fetch = FetchType.EAGER)
      private final List<Recipes> recipes = new ArrayList<>();
 
+    public Ingredients(Long ingredientId, String ingredientName, String ingredientType) {
+        this.ingredientId = ingredientId;
+        this.ingredientName = ingredientName;
+        this.ingredientType = ingredientType;
+    }
+
+    public Ingredients(String ingredientName, String ingredientType) {
+        this.ingredientName = ingredientName;
+        this.ingredientType = ingredientType;
+    }
+
+    public Ingredients() {}
+
     public Long getIngredientId() {
         return ingredientId;
     }
