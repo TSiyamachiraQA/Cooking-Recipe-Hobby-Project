@@ -1,10 +1,17 @@
 
 const POSTREQ = new XMLHttpRequest();
 
-// POSTING INFORMATION TO THE SERVER
-let data =
-    '{"ingredientName":"Potatoes","ingredientType":"Veg"}';
 function postIngredients() {
+    let e = document.getElementById("ingrType");
+    let ingr = e.options[e.selectedIndex].value;
+
+    let params = document.getElementById("ingrName").value;
+
+// POSTING INFORMATION TO THE SERVER
+    let data =
+        `{"ingredientName":"${params}","ingredientType":"${ingr}"}`;
+    console.log(data);
+
     POSTREQ.open('POST', 'http://localhost:8080/createIngredients');
     POSTREQ.setRequestHeader('Content-Type', 'Application/json');
     POSTREQ.setRequestHeader('Access-Control-Allow-Origin', '*');

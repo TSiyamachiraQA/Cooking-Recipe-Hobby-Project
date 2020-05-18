@@ -72,8 +72,8 @@ $(document).ready(function () {
             <strong>Ingredient Uploaded.</strong> </div>
         </div>
         <fieldset>
-          <label class="ingrname">Ingredient Name
-            <input type="text"placeholder="Rice">
+          <label class="ingrname" for = "ingrName" >Ingredient Name
+            <input type="text"placeholder="Rice" id="ingrName">
             <br class="clear">
             <span class="error error-empty">*This is not a valid ingredient name.</span><span class="empty error-empty">*An ingredient name is required.</span> </label>
           <br class="clear">
@@ -90,7 +90,7 @@ $(document).ready(function () {
               <option>Nuts & Seeds</option>
             </select>
             <br class="clear">
-          <div class="btns"><a data-type="reset">Clear</a><a data-type="submit">Submit</a>
+          <div class="btns"><button id = "postingredients"  data-type="submit">Submit</button>
             <div class="clear"></div>
           </div>
         </fieldset>
@@ -112,8 +112,8 @@ $(document).ready(function () {
             <span class="error error-empty">*This is not a valid recipe name.</span><span class="empty error-empty">*A recipe name is required.</span></label>
           <br class="clear">
           <br class="clear">
-          <label for="ingrType" >Recipe Serving</label>
-          <select class="form-control dropdown-menu-center" id="ingrType">
+          <label for="recType" >Recipe Serving</label>
+          <select class="form-control dropdown-menu-center" id="recType">
             <option>2</option>
             <option>4</option>
             <option>6</option>
@@ -155,5 +155,6 @@ $(document).ready(function () {
     </div>
   </div>
 </footer>
+<script src="apijs/postIngredients.js"></script>
 </body>
 </html>
