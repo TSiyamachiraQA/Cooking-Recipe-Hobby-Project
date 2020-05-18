@@ -106,14 +106,14 @@ $(document).ready(function () {
             <strong>Recipe Uploaded..</strong> </div>
         </div>
         <fieldset>
-          <label class="recname">Recipe Name
-            <input type="text" placeholder="Chilli Corn Carne">
+          <label class="recname" for = "recname" >Recipe Name
+            <input type="text" placeholder="Chilli Corn Carne" id = recname>
             <br class="clear">
             <span class="error error-empty">*This is not a valid recipe name.</span><span class="empty error-empty">*A recipe name is required.</span></label>
           <br class="clear">
           <br class="clear">
-          <label for="recType" >Recipe Serving</label>
-          <select class="form-control dropdown-menu-center" id="recType">
+          <label for="recServ" >Recipe Serving</label>
+          <select class="form-control dropdown-menu-center" id="recServ">
             <option>2</option>
             <option>4</option>
             <option>6</option>
@@ -121,12 +121,12 @@ $(document).ready(function () {
           </select>
           <br class="clear">
             <span class="error error-empty">*This is not a valid serving.</span><span class="empty error-empty">*This field is required.</span> </label>
-          <label class="description">
-            <textarea>Description/Steps:</textarea>
+          <label class="description" for = "description">
+            <textarea id = "description" placeholder="Description/Steps:" ></textarea>
             <br class="clear">
             <span class="error">*The description is too short.</span> <span class="empty">*This field is required.</span> </label>
           <div class="clear"></div>
-          <div class="btns"><a data-type="reset">Clear</a><a data-type="submit">Submit</a>
+          <div class="btns"><button id="postrecipe" data-type="submit">Submit</button>
             <div class="clear"></div>
           </div>
         </fieldset>
@@ -156,5 +156,6 @@ $(document).ready(function () {
   </div>
 </footer>
 <script src="apijs/postIngredients.js"></script>
+<script src="apijs/postRecipes.js"></script>
 </body>
 </html>
