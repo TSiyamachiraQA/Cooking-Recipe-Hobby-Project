@@ -51,14 +51,36 @@ $(document).ready(function () {
 <div class="content">
   <div class="container_12">
     <div class="grid_5">
-      <h3>Contact Info</h3>
-      <div class="map">
-        <figure class="img_inner fleft">
-          <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-        </figure>
-        <p>All premium <span class="col1">website templates</span> from our collection go with support services. We do not provide any personal support for freebies. </p>
-        <p>If you need someone to help you customize or polish the chosen free theme, ask guys from <span class="col1">Template Tuning</span> to do it for you. Keep in mind this will be a paid service.</p>
-        Any ideas about freebies you want to see at our blog? Leave your messages here and tell us about the topics or theme categories you want us to design and develop. </div>
+      <h3>Ingredients</h3>
+      <h4>Add an ingredient to the database.</h4>
+      <p> </p>
+      <form id="form" action="#">
+        <div class="success_wrapper">
+          <div class="success">Ingredient submitted!<br>
+            <strong>Ingredient Uploaded.</strong> </div>
+        </div>
+        <fieldset>
+          <label class="ingrname">
+            <input type="text" value="Ingredient Name:">
+            <br class="clear">
+            <span class="error error-empty">*This is not a valid ingredient name.</span><span class="empty error-empty">*This field is required.</span> </label>
+          <label class="ingrtype">
+            <select class="form-group" id = "ingrFormInput" value="Ingredient Type:">
+              <option>Dairy</option>
+              <option>Meats</option>
+              <option>Poultry</option>
+              <option>Seafood</option>
+              <option>Grains</option>
+              <option>Fruit</option>
+              <option>Vegetables</option>
+              <option>Nuts & Seeds</option>
+            </select>
+            <br class="clear">
+          <div class="btns"><a data-type="reset">Clear</a><a data-type="submit">Submit</a>
+            <div class="clear"></div>
+          </div>
+        </fieldset>
+      </form>
     </div>
     <div class="grid_6 prefix_1">
       <h3>Contact Form</h3>

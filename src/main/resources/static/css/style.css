@@ -41,7 +41,7 @@ body {
 	border:0;
 	float:right;
 	background:#fff;
-	color:#f00;
+	color:#3ccd3c;
 	width:50%;
 	line-height:10px;
 	font-size:10px;
@@ -139,7 +139,7 @@ a {
 }
 
 a:hover, a.link1:hover {
-	color: #D5888E;
+	color: #3ccd3c;
 	
 }
 
@@ -368,7 +368,7 @@ a.next1 {
 }
 
 .socials a:hover {
-	background-color: #D5888E;
+	background-color: #3ccd3c;
 }
 
 .box {
@@ -381,7 +381,7 @@ a.next1 {
 a.gal {
 	display: block;
 	margin-bottom: 12px;
-	background: url(../images/magnify.png) center center no-repeat #D5888E;
+	background: url(../images/magnify.png) center center no-repeat #3ccd3c;
 
 }
 
