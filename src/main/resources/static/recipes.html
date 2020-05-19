@@ -53,15 +53,42 @@ $(document).ready(function () {
   </div>
 </header>
 <div class="content">
-  <style>
-    .dropdown-menu-center {
-      left: 50% !important;
-      right: auto !important;
-      text-align: center !important;
-      transform: translate(-50%, 0) !important;
-    }
-  </style>
-  <div class="container_12">
+   <div class="container_12">
+
+     <h3 class="mb0">Recipe List</h3>
+     </br>
+
+    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      th{
+        color:#fff;
+        background-color: #3ccd3c;
+      }
+
+    </style>
+
+    <centre>
+      <table class="table table-hover" style="width: 80%; height: 80%;margin-left:auto;margin-right:auto;">
+        <tr  class="bg-info">
+          <th>Recipe Name</th>
+          <th>Recipe Serving</th>
+          <th>Description</th>
+        </tr>
+
+        <tbody id="myTable">
+
+        </tbody>
+      </table>
+      <button id = "getrecipes"> Get Recipes </button>
+    </centre>
+    <script src="apijs/getRecipe.js"></script>
+
+    </body>
+
     <div class="grid_5">
       <h3>Ingredients</h3>
       <h4>Add an ingredient to the inventory.</h4>
@@ -79,7 +106,7 @@ $(document).ready(function () {
           <br class="clear">
           <br class="clear">
           <label for="ingrType">Ingredients Type</label>
-          <select class="form-control dropdown-menu-center" id="ingrType">
+          <select class="form-control" id="ingrType">
               <option>Dairy</option>
               <option>Meats</option>
               <option>Poultry</option>
@@ -113,7 +140,7 @@ $(document).ready(function () {
           <br class="clear">
           <br class="clear">
           <label for="recServ" >Recipe Serving</label>
-          <select class="form-control dropdown-menu-center" id="recServ">
+          <select class="form-control " id="recServ">
             <option>2</option>
             <option>4</option>
             <option>6</option>
