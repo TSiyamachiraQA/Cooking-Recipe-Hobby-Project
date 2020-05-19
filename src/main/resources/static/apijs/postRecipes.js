@@ -11,7 +11,7 @@ function postRec() {
 
 // POSTING INFORMATION TO THE SERVER
     let data =
-      `{"recipeName":"${paras}","recipeServing":"${reci}","description":"${descr}"}`;
+      `{"recipeName":"${paras}","recipeServing":"${reci}","descriptionSteps":"${descr}"}`;
 
     console.log(data);
 

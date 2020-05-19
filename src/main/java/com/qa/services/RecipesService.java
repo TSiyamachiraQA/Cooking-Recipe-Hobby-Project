@@ -45,7 +45,7 @@ public class RecipesService {
         update.setRecipeName(recipes.getRecipeName());
         update.setRecipeServing(recipes.getRecipeServing());
         update.setRecipeServing(recipes.getRecipeServing());
-        update.setDescription(recipes.getDescription());
+        update.setDescriptionSteps(recipes.getDescriptionSteps());
         Recipes tempRecipes = this.recipesRepo.save(update);
         return this.mapToDTO(tempRecipes);
     }

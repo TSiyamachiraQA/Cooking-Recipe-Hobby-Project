@@ -10,15 +10,15 @@ public class RecipesDTO {
     private Long recipeId;
     private String recipeName;
     private Long recipeServing;
-    private String description;
+    private String descriptionSteps;
     private List<IngredientsDTO> ingredients = new ArrayList<>();
 
     public RecipesDTO(){}
 
-    public RecipesDTO(String recipeName, Long recipeServing, String description) {
+    public RecipesDTO(String recipeName, Long recipeServing, String descriptionSteps) {
         this.recipeName = recipeName;
         this.recipeServing = recipeServing;
-        this.description = description;
+        this.descriptionSteps = descriptionSteps;
     }
 
     public Long getRecipeId() {
@@ -46,11 +46,11 @@ public class RecipesDTO {
     }
 
     public String getDescription() {
-        return description;
+        return descriptionSteps;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.descriptionSteps = description;
     }
 
     public List<IngredientsDTO> getIngredients() {

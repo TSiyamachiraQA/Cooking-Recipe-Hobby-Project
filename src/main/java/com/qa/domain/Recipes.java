@@ -1,12 +1,8 @@
 package com.qa.domain;
 
-import org.w3c.dom.stylesheets.LinkStyle;
-
 import javax.persistence.*;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 
 @Entity
@@ -19,7 +15,7 @@ public class Recipes {
 
     private String recipeName;
     private Long recipeServing;
-    private String description;
+    private String descriptionSteps;
 
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -33,17 +29,17 @@ public class Recipes {
     private final List<Ingredients> ingredients = new ArrayList<>();
 
 
-    public Recipes(Long recipeId, String recipeName, Long recipeServing, String description) {
+    public Recipes(Long recipeId, String recipeName, Long recipeServing, String descriptionSteps) {
         this.recipeId = recipeId;
         this.recipeName = recipeName;
         this.recipeServing = recipeServing;
-        this.description = description;
+        this.descriptionSteps = descriptionSteps;
     }
 
-    public Recipes(String recipeName, Long recipeServing, String description) {
+    public Recipes(String recipeName, Long recipeServing, String descriptionSteps) {
         this.recipeName = recipeName;
         this.recipeServing = recipeServing;
-        this.description = description;
+        this.descriptionSteps = descriptionSteps;
     }
 
     public Recipes(){}
@@ -76,12 +72,12 @@ public class Recipes {
         this.recipeServing = recipeServing;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescriptionSteps() {
+        return descriptionSteps;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescriptionSteps(String descriptionSteps) {
+        this.descriptionSteps = descriptionSteps;
     }
 
     public List<Ingredients> getIngredients() {
@@ -96,7 +92,7 @@ public class Recipes {
                 "recipeId=" + recipeId +
                 ", recipeName='" + recipeName + '\'' +
                 ", recipeServing=" + recipeServing +
-                ", description='" + description + '\'' +
+                ", descriptionSteps='" + descriptionSteps + '\'' +
                 ", ingredients=" + ingredients +
                 '}';
     }
@@ -106,7 +102,7 @@ public class Recipes {
         int result = recipeId.hashCode();
         result = 31 * result + recipeName.hashCode();
         result = 31 * result + recipeServing.hashCode();
-        result = 31 * result + description.hashCode();
+        result = 31 * result + descriptionSteps.hashCode();
         result = 31 * result + ingredients.hashCode();
         return result;
     }
@@ -121,7 +117,7 @@ public class Recipes {
         if (!recipeId.equals(recipes.recipeId)) return false;
         if (!recipeName.equals(recipes.recipeName)) return false;
         if (!recipeServing.equals(recipes.recipeServing)) return false;
-        return description.equals(recipes.description);
+        return descriptionSteps.equals(recipes.descriptionSteps);
     }
 
 //    @Override
