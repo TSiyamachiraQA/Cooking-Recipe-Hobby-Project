@@ -61,19 +61,6 @@ public class RecipesDTOUnitTest {
 
 
     @Test
-    public void recipesNamesNotEqual() {
-        other.setRecipeName("Egg Fried Rice");
-        assertFalse(recipesDTO.equals(other));
-    }
-
-
-    @Test
-    public void otherRecipesTypeDifferent() {
-        other.setRecipeServing(2L);
-        assertFalse(recipesDTO.equals(other));
-    }
-
-    @Test
     public void constructorWithoutId() {
         RecipesDTO recipesDTO = new RecipesDTO( "Egg Fried Rice", 4L, "This is great...");
         assertNotNull(recipesDTO.getRecipeName());

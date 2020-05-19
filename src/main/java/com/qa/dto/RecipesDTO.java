@@ -60,4 +60,28 @@ public class RecipesDTO {
     public void setIngredients(List<IngredientsDTO> ingredients) {
         this.ingredients = ingredients;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        RecipesDTO that = (RecipesDTO) o;
+
+        if (!recipeId.equals(that.recipeId)) return false;
+        if (!recipeName.equals(that.recipeName)) return false;
+        if (!recipeServing.equals(that.recipeServing)) return false;
+        if (!descriptionSteps.equals(that.descriptionSteps)) return false;
+        return ingredients.equals(that.ingredients);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = recipeId.hashCode();
+        result = 31 * result + recipeName.hashCode();
+        result = 31 * result + recipeServing.hashCode();
+        result = 31 * result + descriptionSteps.hashCode();
+        result = 31 * result + ingredients.hashCode();
+        return result;
+    }
 }
