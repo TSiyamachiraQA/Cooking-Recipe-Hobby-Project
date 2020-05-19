@@ -50,7 +50,7 @@ public class RecipesControllerUnitTest {
         this.recipesList = new ArrayList<>();
         this.testRecipes = new Recipes("Chicken Fried Rice",4L,"This is a famous..");
         this.recipesList.add(testRecipes);
-        this.testRecipesWithID = new Recipes(testRecipes.getRecipeName(), testRecipes.getRecipeServing(),testRecipes.getDescription());
+        this.testRecipesWithID = new Recipes(testRecipes.getRecipeName(), testRecipes.getRecipeServing(),testRecipes.getDescriptionSteps());
         this.testRecipesWithID.setRecipeId(recipeId);
         this.recipesDTO = this.mapToDTO(testRecipesWithID);
     }

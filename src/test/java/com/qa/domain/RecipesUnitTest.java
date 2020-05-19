@@ -21,7 +21,7 @@ public class RecipesUnitTest {
         assertNotNull(recipes.getRecipeId());
         assertNotNull(recipes.getRecipeName());
         assertNotNull(recipes.getRecipeServing());
-        assertNotNull(recipes.getDescription());
+        assertNotNull(recipes.getDescriptionSteps());
 
         recipes.setRecipeId(null);
         assertNull(recipes.getRecipeId());
@@ -29,8 +29,8 @@ public class RecipesUnitTest {
         assertNull(recipes.getRecipeName());
         recipes.setRecipeServing(null);
         assertNull(recipes.getRecipeServing());
-        recipes.setDescription(null);
-        assertNull(recipes.getDescription());
+        recipes.setDescriptionSteps(null);
+        assertNull(recipes.getDescriptionSteps());
 
     }
 
@@ -49,7 +49,7 @@ public class RecipesUnitTest {
         assertEquals(1L, recipes.getRecipeId(), 0);
         assertEquals("Chicken Fried Rice", recipes.getRecipeName());
         assertEquals(4L, recipes.getRecipeServing(), 0);
-        assertEquals("This famous dish...", recipes.getDescription());
+        assertEquals("This famous dish...", recipes.getDescriptionSteps());
     }
 
     @Test
@@ -87,7 +87,7 @@ public class RecipesUnitTest {
         Recipes recipes = new Recipes("Chicken Fried Rice",4L,"This famous dish..." );
         assertNull(recipes.getRecipeId());
         assertNotNull(recipes.getRecipeName());
-        assertNotNull(recipes.getDescription());
+        assertNotNull(recipes.getDescriptionSteps());
     }
 
 
