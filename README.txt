@@ -1,9 +1,5 @@
-Coverage: 34%
+Coverage: 76.1%
 # Global Cuisine Recipes
-
-One Paragraph of project description goes here
-
-## Getting Started
 
 The project sets out to allow users to collate recipes with respect to various food qualities.
 The project sets out to make an application that allows users retrieve and upload recipes;
@@ -11,7 +7,14 @@ The project sets out to make an application that allows users retrieve and uploa
  - with functions that allow to categories foods by nutritional values.
  - with functions that allow to categories foods by caloric values.
  - with functions that allow for users to be able to populate a recipe by using the ingredients in database.
-.
+
+## Getting Started
+
+This project aims to create a full-stack web application following the Enterprise Architecture Model, using;
+- an application back-end developed using Java.
+- a managed database hosted within. MySQL in GCP.
+- a front-end developed using JavaScript, HTML, CSS.
+
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -26,7 +29,7 @@ These instructions will get you a copy of the project up and running on your loc
 What softwares you need to install the software;
 
 1. JAVA JDK & JRE
-2. Eclipse
+2. IntelliJ
 3. Apache Maven
 4. Jenkins
 5. Git
