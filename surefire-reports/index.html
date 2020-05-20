@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">66 methods, 2 failed,   64 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.selenium.AppSeleniumTest" hash-for-method="seleniumExampleTest">seleniumExampleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.AppTest" hash-for-method="shouldAnswerWithTrue">shouldAnswerWithTrue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.RecipesUnitTest" hash-for-method="checkEquality">checkEquality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.RecipesDTOUnitTest" hash-for-method="checkEquality">checkEquality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="checkEquality">checkEquality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.IngredientsDTOUnitTest" hash-for-method="checkEquality">checkEquality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="checkEqualityBetweenDifferentObjects">checkEqualityBetweenDifferentObjects</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.RecipesDTOUnitTest" hash-for-method="constructorWithoutId">constructorWithoutId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.IngredientsDTOUnitTest" hash-for-method="constructorWithoutId">constructorWithoutId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="constructorWithoutId">constructorWithoutId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.RecipesUnitTest" hash-for-method="constructorWithoutId">constructorWithoutId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="createIngredientWithId">createIngredientWithId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.IngredientsDTOUnitTest" hash-for-method="createIngredientWithId">createIngredientWithId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.IngredientsServicesIntegrationTest" hash-for-method="createIngredientsTest">createIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.IngredientsControllerIntegrationTest" hash-for-method="createIngredientsTest">createIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.IngredientsServicesUnitTest" hash-for-method="createIngredientsTest">createIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.IngredientsControllerUnitTest" hash-for-method="createIngredientsTest">createIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.RecipesUnitTest" hash-for-method="createRecipeWithId">createRecipeWithId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.RecipesDTOUnitTest" hash-for-method="createRecipeWithId">createRecipeWithId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.RecipesControllerIntegrationTest" hash-for-method="createRecipesTest">createRecipesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.RecipesServicesUnitTest" hash-for-method="createRecipesTest">createRecipesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.RecipesControllerUnitTest" hash-for-method="createRecipesTest">createRecipesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.IngredientsServicesUnitTest" hash-for-method="deleteIngredientsByExistingId">deleteIngredientsByExistingId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.IngredientsServicesUnitTest" hash-for-method="deleteIngredientsByNonExistingId">deleteIngredientsByNonExistingId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.RecipesServicesUnitTest" hash-for-method="deleteIngredientsByNonExistingId">deleteIngredientsByNonExistingId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.IngredientsControllerIntegrationTest" hash-for-method="deleteIngredientsTest">deleteIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.IngredientsServicesIntegrationTest" hash-for-method="deleteIngredientsTest">deleteIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.IngredientsControllerUnitTest" hash-for-method="deleteIngredientsTestFalse">deleteIngredientsTestFalse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.RecipesControllerUnitTest" hash-for-method="deleteIngredientsTestFalse">deleteIngredientsTestFalse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.IngredientsControllerUnitTest" hash-for-method="deleteIngredientsTestTrue">deleteIngredientsTestTrue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.RecipesControllerUnitTest" hash-for-method="deleteIngredientsTestTrue">deleteIngredientsTestTrue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.RecipesServicesUnitTest" hash-for-method="deleteRecipesByExistingId">deleteRecipesByExistingId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.RecipesControllerIntegrationTest" hash-for-method="deleteRecipesTest">deleteRecipesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.RecipesDTOUnitTest" hash-for-method="equalsWithDifferentObject">equalsWithDifferentObject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.RecipesUnitTest" hash-for-method="equalsWithDifferentObject">equalsWithDifferentObject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="equalsWithDifferentObject">equalsWithDifferentObject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.IngredientsDTOUnitTest" hash-for-method="equalsWithDifferentObject">equalsWithDifferentObject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.RecipesDTOUnitTest" hash-for-method="equalsWithNull">equalsWithNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.RecipesUnitTest" hash-for-method="equalsWithNull">equalsWithNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="equalsWithNull">equalsWithNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.IngredientsDTOUnitTest" hash-for-method="equalsWithNull">equalsWithNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.IngredientsServicesIntegrationTest" hash-for-method="findIngredientsByIdTest">findIngredientsByIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.IngredientsServicesUnitTest" hash-for-method="findNoteById">findNoteById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.RecipesServicesUnitTest" hash-for-method="findRecipeById">findRecipeById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.IngredientsControllerUnitTest" hash-for-method="getAllIngredientsTest">getAllIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.IngredientsServicesUnitTest" hash-for-method="getAllIngredientsTest">getAllIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.IngredientsControllerIntegrationTest" hash-for-method="getAllIngredientsTest">getAllIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.RecipesControllerIntegrationTest" hash-for-method="getAllRecipesTest">getAllRecipesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.RecipesServicesUnitTest" hash-for-method="getAllRecipesTest">getAllRecipesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.RecipesControllerUnitTest" hash-for-method="getAllRecipesTest">getAllRecipesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.IngredientsControllerIntegrationTest" hash-for-method="getIngredientsByID">getIngredientsByID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.IngredientsControllerUnitTest" hash-for-method="getIngredientsByIDTest">getIngredientsByIDTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.RecipesControllerUnitTest" hash-for-method="getIngredientsByIDTest">getIngredientsByIDTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.controller.RecipesControllerIntegrationTest" hash-for-method="getRecipesByID">getRecipesByID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="hashCodeTest">hashCodeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="ingredientsNamesNotEqual">ingredientsNamesNotEqual</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.RecipesUnitTest" hash-for-method="nullServing">nullServing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.RecipesUnitTest" hash-for-method="otherIdDifferent">otherIdDifferent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="otherIngredientsIdDifferent">otherIngredientsIdDifferent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="otherIngredientsTypeDifferent">otherIngredientsTypeDifferent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.services.IngredientsServicesIntegrationTest" hash-for-method="readIngredientsTest">readIngredientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.RecipesUnitTest" hash-for-method="recipeNamesNotEqual">recipeNamesNotEqual</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.IngredientsDTOUnitTest" hash-for-method="settersTest">settersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.IngredientsUnitTest" hash-for-method="settersTest">settersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.dto.RecipesDTOUnitTest" hash-for-method="settersTest">settersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.domain.RecipesUnitTest" hash-for-method="settersTest">settersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.AppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue">
+                  </a> <!-- shouldAnswerWithTrue -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <div class="stack-trace">org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.qa.App.main(App.java:11)
+	at com.qa.AppTest.shouldAnswerWithTrue(AppTest.java:14)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.selenium.AppSeleniumTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="seleniumExampleTest">
+                  </a> <!-- seleniumExampleTest -->
+                  <span class="method-name">seleniumExampleTest</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: com/google/gson/JsonElement
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethod(Class.java:2128)
+	at org.openqa.selenium.json.JsonOutput.getMethod(JsonOutput.java:307)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$15(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.lambda$write$29(JsonOutput.java:260)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:261)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at java.util.TreeMap.forEach(TreeMap.java:1005)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1507)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:100)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+	at com.qa.selenium.AppSeleniumTest.setUp(AppSeleniumTest.java:19)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-NAEHOQI&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: ChromeDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 55 more
+Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonElement
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 82 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.services.RecipesServicesUnitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createRecipesTest">
+                  </a> <!-- createRecipesTest -->
+                  <span class="method-name">createRecipesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIngredientsByNonExistingId">
+                  </a> <!-- deleteIngredientsByNonExistingId -->
+                  <span class="method-name">deleteIngredientsByNonExistingId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteRecipesByExistingId">
+                  </a> <!-- deleteRecipesByExistingId -->
+                  <span class="method-name">deleteRecipesByExistingId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findRecipeById">
+                  </a> <!-- findRecipeById -->
+                  <span class="method-name">findRecipeById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllRecipesTest">
+                  </a> <!-- getAllRecipesTest -->
+                  <span class="method-name">getAllRecipesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.controller.IngredientsControllerUnitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createIngredientsTest">
+                  </a> <!-- createIngredientsTest -->
+                  <span class="method-name">createIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIngredientsTestFalse">
+                  </a> <!-- deleteIngredientsTestFalse -->
+                  <span class="method-name">deleteIngredientsTestFalse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIngredientsTestTrue">
+                  </a> <!-- deleteIngredientsTestTrue -->
+                  <span class="method-name">deleteIngredientsTestTrue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllIngredientsTest">
+                  </a> <!-- getAllIngredientsTest -->
+                  <span class="method-name">getAllIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getIngredientsByIDTest">
+                  </a> <!-- getIngredientsByIDTest -->
+                  <span class="method-name">getIngredientsByIDTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.domain.IngredientsUnitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEquality">
+                  </a> <!-- checkEquality -->
+                  <span class="method-name">checkEquality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEqualityBetweenDifferentObjects">
+                  </a> <!-- checkEqualityBetweenDifferentObjects -->
+                  <span class="method-name">checkEqualityBetweenDifferentObjects</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="constructorWithoutId">
+                  </a> <!-- constructorWithoutId -->
+                  <span class="method-name">constructorWithoutId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createIngredientWithId">
+                  </a> <!-- createIngredientWithId -->
+                  <span class="method-name">createIngredientWithId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="equalsWithDifferentObject">
+                  </a> <!-- equalsWithDifferentObject -->
+                  <span class="method-name">equalsWithDifferentObject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="equalsWithNull">
+                  </a> <!-- equalsWithNull -->
+                  <span class="method-name">equalsWithNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hashCodeTest">
+                  </a> <!-- hashCodeTest -->
+                  <span class="method-name">hashCodeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ingredientsNamesNotEqual">
+                  </a> <!-- ingredientsNamesNotEqual -->
+                  <span class="method-name">ingredientsNamesNotEqual</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="otherIngredientsIdDifferent">
+                  </a> <!-- otherIngredientsIdDifferent -->
+                  <span class="method-name">otherIngredientsIdDifferent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="otherIngredientsTypeDifferent">
+                  </a> <!-- otherIngredientsTypeDifferent -->
+                  <span class="method-name">otherIngredientsTypeDifferent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settersTest">
+                  </a> <!-- settersTest -->
+                  <span class="method-name">settersTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.controller.RecipesControllerIntegrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createRecipesTest">
+                  </a> <!-- createRecipesTest -->
+                  <span class="method-name">createRecipesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteRecipesTest">
+                  </a> <!-- deleteRecipesTest -->
+                  <span class="method-name">deleteRecipesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllRecipesTest">
+                  </a> <!-- getAllRecipesTest -->
+                  <span class="method-name">getAllRecipesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRecipesByID">
+                  </a> <!-- getRecipesByID -->
+                  <span class="method-name">getRecipesByID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.controller.RecipesControllerUnitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createRecipesTest">
+                  </a> <!-- createRecipesTest -->
+                  <span class="method-name">createRecipesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIngredientsTestFalse">
+                  </a> <!-- deleteIngredientsTestFalse -->
+                  <span class="method-name">deleteIngredientsTestFalse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIngredientsTestTrue">
+                  </a> <!-- deleteIngredientsTestTrue -->
+                  <span class="method-name">deleteIngredientsTestTrue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllRecipesTest">
+                  </a> <!-- getAllRecipesTest -->
+                  <span class="method-name">getAllRecipesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getIngredientsByIDTest">
+                  </a> <!-- getIngredientsByIDTest -->
+                  <span class="method-name">getIngredientsByIDTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.dto.RecipesDTOUnitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEquality">
+                  </a> <!-- checkEquality -->
+                  <span class="method-name">checkEquality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="constructorWithoutId">
+                  </a> <!-- constructorWithoutId -->
+                  <span class="method-name">constructorWithoutId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createRecipeWithId">
+                  </a> <!-- createRecipeWithId -->
+                  <span class="method-name">createRecipeWithId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="equalsWithDifferentObject">
+                  </a> <!-- equalsWithDifferentObject -->
+                  <span class="method-name">equalsWithDifferentObject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="equalsWithNull">
+                  </a> <!-- equalsWithNull -->
+                  <span class="method-name">equalsWithNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settersTest">
+                  </a> <!-- settersTest -->
+                  <span class="method-name">settersTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.domain.RecipesUnitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEquality">
+                  </a> <!-- checkEquality -->
+                  <span class="method-name">checkEquality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="constructorWithoutId">
+                  </a> <!-- constructorWithoutId -->
+                  <span class="method-name">constructorWithoutId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createRecipeWithId">
+                  </a> <!-- createRecipeWithId -->
+                  <span class="method-name">createRecipeWithId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="equalsWithDifferentObject">
+                  </a> <!-- equalsWithDifferentObject -->
+                  <span class="method-name">equalsWithDifferentObject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="equalsWithNull">
+                  </a> <!-- equalsWithNull -->
+                  <span class="method-name">equalsWithNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nullServing">
+                  </a> <!-- nullServing -->
+                  <span class="method-name">nullServing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="otherIdDifferent">
+                  </a> <!-- otherIdDifferent -->
+                  <span class="method-name">otherIdDifferent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="recipeNamesNotEqual">
+                  </a> <!-- recipeNamesNotEqual -->
+                  <span class="method-name">recipeNamesNotEqual</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settersTest">
+                  </a> <!-- settersTest -->
+                  <span class="method-name">settersTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.services.IngredientsServicesUnitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createIngredientsTest">
+                  </a> <!-- createIngredientsTest -->
+                  <span class="method-name">createIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIngredientsByExistingId">
+                  </a> <!-- deleteIngredientsByExistingId -->
+                  <span class="method-name">deleteIngredientsByExistingId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIngredientsByNonExistingId">
+                  </a> <!-- deleteIngredientsByNonExistingId -->
+                  <span class="method-name">deleteIngredientsByNonExistingId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findNoteById">
+                  </a> <!-- findNoteById -->
+                  <span class="method-name">findNoteById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllIngredientsTest">
+                  </a> <!-- getAllIngredientsTest -->
+                  <span class="method-name">getAllIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.services.IngredientsServicesIntegrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createIngredientsTest">
+                  </a> <!-- createIngredientsTest -->
+                  <span class="method-name">createIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIngredientsTest">
+                  </a> <!-- deleteIngredientsTest -->
+                  <span class="method-name">deleteIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findIngredientsByIdTest">
+                  </a> <!-- findIngredientsByIdTest -->
+                  <span class="method-name">findIngredientsByIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="readIngredientsTest">
+                  </a> <!-- readIngredientsTest -->
+                  <span class="method-name">readIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.dto.IngredientsDTOUnitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEquality">
+                  </a> <!-- checkEquality -->
+                  <span class="method-name">checkEquality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="constructorWithoutId">
+                  </a> <!-- constructorWithoutId -->
+                  <span class="method-name">constructorWithoutId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createIngredientWithId">
+                  </a> <!-- createIngredientWithId -->
+                  <span class="method-name">createIngredientWithId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="equalsWithDifferentObject">
+                  </a> <!-- equalsWithDifferentObject -->
+                  <span class="method-name">equalsWithDifferentObject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="equalsWithNull">
+                  </a> <!-- equalsWithNull -->
+                  <span class="method-name">equalsWithNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settersTest">
+                  </a> <!-- settersTest -->
+                  <span class="method-name">settersTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.controller.IngredientsControllerIntegrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createIngredientsTest">
+                  </a> <!-- createIngredientsTest -->
+                  <span class="method-name">createIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIngredientsTest">
+                  </a> <!-- deleteIngredientsTest -->
+                  <span class="method-name">deleteIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllIngredientsTest">
+                  </a> <!-- getAllIngredientsTest -->
+                  <span class="method-name">getAllIngredientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getIngredientsByID">
+                  </a> <!-- getIngredientsByID -->
+                  <span class="method-name">getIngredientsByID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot; junit=&quot;true&quot;&gt;
+  &lt;test name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.AppTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.controller.IngredientsControllerIntegrationTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.controller.IngredientsControllerUnitTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.controller.RecipesControllerIntegrationTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.controller.RecipesControllerUnitTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.domain.IngredientsUnitTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.domain.RecipesUnitTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.dto.IngredientsDTOUnitTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.dto.RecipesDTOUnitTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.selenium.AppSeleniumTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.services.IngredientsServicesIntegrationTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.services.IngredientsServicesUnitTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.services.RecipesServicesUnitTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (13 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(66);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'shouldAnswerWithTrue')
+data.setCell(0, 2, 'com.qa.AppTest')
+data.setCell(0, 3, 12925);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getAllIngredientsTest')
+data.setCell(1, 2, 'com.qa.controller.IngredientsControllerIntegrationTest')
+data.setCell(1, 3, 5043);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createIngredientsTest')
+data.setCell(2, 2, 'com.qa.controller.IngredientsControllerIntegrationTest')
+data.setCell(2, 3, 4828);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deleteIngredientsTest')
+data.setCell(3, 2, 'com.qa.controller.IngredientsControllerIntegrationTest')
+data.setCell(3, 3, 4527);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getIngredientsByID')
+data.setCell(4, 2, 'com.qa.controller.IngredientsControllerIntegrationTest')
+data.setCell(4, 3, 4187);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'readIngredientsTest')
+data.setCell(5, 2, 'com.qa.services.IngredientsServicesIntegrationTest')
+data.setCell(5, 3, 3205);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'findIngredientsByIdTest')
+data.setCell(6, 2, 'com.qa.services.IngredientsServicesIntegrationTest')
+data.setCell(6, 3, 3005);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createIngredientsTest')
+data.setCell(7, 2, 'com.qa.services.IngredientsServicesIntegrationTest')
+data.setCell(7, 3, 2843);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'deleteIngredientsTest')
+data.setCell(8, 2, 'com.qa.services.IngredientsServicesIntegrationTest')
+data.setCell(8, 3, 2704);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'deleteRecipesTest')
+data.setCell(9, 2, 'com.qa.controller.RecipesControllerIntegrationTest')
+data.setCell(9, 3, 1144);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'seleniumExampleTest')
+data.setCell(10, 2, 'com.qa.selenium.AppSeleniumTest')
+data.setCell(10, 3, 970);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getRecipesByID')
+data.setCell(11, 2, 'com.qa.controller.RecipesControllerIntegrationTest')
+data.setCell(11, 3, 828);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getAllRecipesTest')
+data.setCell(12, 2, 'com.qa.controller.RecipesControllerIntegrationTest')
+data.setCell(12, 3, 638);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'createRecipesTest')
+data.setCell(13, 2, 'com.qa.controller.RecipesControllerIntegrationTest')
+data.setCell(13, 3, 432);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'deleteIngredientsByNonExistingId')
+data.setCell(14, 2, 'com.qa.services.IngredientsServicesUnitTest')
+data.setCell(14, 3, 248);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'findNoteById')
+data.setCell(15, 2, 'com.qa.services.IngredientsServicesUnitTest')
+data.setCell(15, 3, 248);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'createIngredientsTest')
+data.setCell(16, 2, 'com.qa.services.IngredientsServicesUnitTest')
+data.setCell(16, 3, 233);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'getAllIngredientsTest')
+data.setCell(17, 2, 'com.qa.services.IngredientsServicesUnitTest')
+data.setCell(17, 3, 233);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'deleteIngredientsByExistingId')
+data.setCell(18, 2, 'com.qa.services.IngredientsServicesUnitTest')
+data.setCell(18, 3, 232);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'getAllIngredientsTest')
+data.setCell(19, 2, 'com.qa.controller.IngredientsControllerUnitTest')
+data.setCell(19, 3, 222);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'getIngredientsByIDTest')
+data.setCell(20, 2, 'com.qa.controller.IngredientsControllerUnitTest')
+data.setCell(20, 3, 222);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'deleteIngredientsTestFalse')
+data.setCell(21, 2, 'com.qa.controller.IngredientsControllerUnitTest')
+data.setCell(21, 3, 222);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'deleteIngredientsTestTrue')
+data.setCell(22, 2, 'com.qa.controller.IngredientsControllerUnitTest')
+data.setCell(22, 3, 222);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'createIngredientsTest')
+data.setCell(23, 2, 'com.qa.controller.IngredientsControllerUnitTest')
+data.setCell(23, 3, 222);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'getAllRecipesTest')
+data.setCell(24, 2, 'com.qa.services.RecipesServicesUnitTest')
+data.setCell(24, 3, 68);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'deleteRecipesByExistingId')
+data.setCell(25, 2, 'com.qa.services.RecipesServicesUnitTest')
+data.setCell(25, 3, 68);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'deleteIngredientsByNonExistingId')
+data.setCell(26, 2, 'com.qa.services.RecipesServicesUnitTest')
+data.setCell(26, 3, 68);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'getIngredientsByIDTest')
+data.setCell(27, 2, 'com.qa.controller.RecipesControllerUnitTest')
+data.setCell(27, 3, 54);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'deleteIngredientsTestFalse')
+data.setCell(28, 2, 'com.qa.controller.RecipesControllerUnitTest')
+data.setCell(28, 3, 54);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'deleteIngredientsTestTrue')
+data.setCell(29, 2, 'com.qa.controller.RecipesControllerUnitTest')
+data.setCell(29, 3, 54);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'createRecipesTest')
+data.setCell(30, 2, 'com.qa.controller.RecipesControllerUnitTest')
+data.setCell(30, 3, 54);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'getAllRecipesTest')
+data.setCell(31, 2, 'com.qa.controller.RecipesControllerUnitTest')
+data.setCell(31, 3, 54);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'createRecipesTest')
+data.setCell(32, 2, 'com.qa.services.RecipesServicesUnitTest')
+data.setCell(32, 3, 53);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'findRecipeById')
+data.setCell(33, 2, 'com.qa.services.RecipesServicesUnitTest')
+data.setCell(33, 3, 53);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'checkEquality')
+data.setCell(34, 2, 'com.qa.domain.RecipesUnitTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'checkEquality')
+data.setCell(35, 2, 'com.qa.dto.RecipesDTOUnitTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'equalsWithDifferentObject')
+data.setCell(36, 2, 'com.qa.dto.RecipesDTOUnitTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'equalsWithDifferentObject')
+data.setCell(37, 2, 'com.qa.domain.RecipesUnitTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'ingredientsNamesNotEqual')
+data.setCell(38, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'constructorWithoutId')
+data.setCell(39, 2, 'com.qa.dto.RecipesDTOUnitTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'createRecipeWithId')
+data.setCell(40, 2, 'com.qa.domain.RecipesUnitTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'settersTest')
+data.setCell(41, 2, 'com.qa.dto.IngredientsDTOUnitTest')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'createIngredientWithId')
+data.setCell(42, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'otherIngredientsIdDifferent')
+data.setCell(43, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'otherIdDifferent')
+data.setCell(44, 2, 'com.qa.domain.RecipesUnitTest')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'hashCodeTest')
+data.setCell(45, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'equalsWithNull')
+data.setCell(46, 2, 'com.qa.dto.RecipesDTOUnitTest')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'constructorWithoutId')
+data.setCell(47, 2, 'com.qa.dto.IngredientsDTOUnitTest')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'equalsWithDifferentObject')
+data.setCell(48, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'settersTest')
+data.setCell(49, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'checkEqualityBetweenDifferentObjects')
+data.setCell(50, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(50, 3, 0);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'equalsWithNull')
+data.setCell(51, 2, 'com.qa.domain.RecipesUnitTest')
+data.setCell(51, 3, 0);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'settersTest')
+data.setCell(52, 2, 'com.qa.dto.RecipesDTOUnitTest')
+data.setCell(52, 3, 0);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'otherIngredientsTypeDifferent')
+data.setCell(53, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(53, 3, 0);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'createRecipeWithId')
+data.setCell(54, 2, 'com.qa.dto.RecipesDTOUnitTest')
+data.setCell(54, 3, 0);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'constructorWithoutId')
+data.setCell(55, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'recipeNamesNotEqual')
+data.setCell(56, 2, 'com.qa.domain.RecipesUnitTest')
+data.setCell(56, 3, 0);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'settersTest')
+data.setCell(57, 2, 'com.qa.domain.RecipesUnitTest')
+data.setCell(57, 3, 0);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'equalsWithNull')
+data.setCell(58, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(58, 3, 0);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'checkEquality')
+data.setCell(59, 2, 'com.qa.domain.IngredientsUnitTest')
+data.setCell(59, 3, 0);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'nullServing')
+data.setCell(60, 2, 'com.qa.domain.RecipesUnitTest')
+data.setCell(60, 3, 0);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'createIngredientWithId')
+data.setCell(61, 2, 'com.qa.dto.IngredientsDTOUnitTest')
+data.setCell(61, 3, 0);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'equalsWithDifferentObject')
+data.setCell(62, 2, 'com.qa.dto.IngredientsDTOUnitTest')
+data.setCell(62, 3, 0);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'checkEquality')
+data.setCell(63, 2, 'com.qa.dto.IngredientsDTOUnitTest')
+data.setCell(63, 3, 0);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'constructorWithoutId')
+data.setCell(64, 2, 'com.qa.domain.RecipesUnitTest')
+data.setCell(64, 3, 0);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'equalsWithNull')
+data.setCell(65, 2, 'com.qa.dto.IngredientsDTOUnitTest')
+data.setCell(65, 3, 0);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.AppTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">shouldAnswerWithTrue</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.controller.IngredientsControllerIntegrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createIngredientsTest</span>
+                <span class="method-start">13117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteIngredientsTest</span>
+                <span class="method-start">13117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getIngredientsByID</span>
+                <span class="method-start">13117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAllIngredientsTest</span>
+                <span class="method-start">13118 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.controller.IngredientsControllerUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createIngredientsTest</span>
+                <span class="method-start">18192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteIngredientsTestFalse</span>
+                <span class="method-start">18192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteIngredientsTestTrue</span>
+                <span class="method-start">18192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAllIngredientsTest</span>
+                <span class="method-start">18192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getIngredientsByIDTest</span>
+                <span class="method-start">18192 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.controller.RecipesControllerIntegrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createRecipesTest</span>
+                <span class="method-start">18435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteRecipesTest</span>
+                <span class="method-start">18435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAllRecipesTest</span>
+                <span class="method-start">18435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRecipesByID</span>
+                <span class="method-start">18435 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.controller.RecipesControllerUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createRecipesTest</span>
+                <span class="method-start">19579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteIngredientsTestFalse</span>
+                <span class="method-start">19579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteIngredientsTestTrue</span>
+                <span class="method-start">19579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAllRecipesTest</span>
+                <span class="method-start">19579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getIngredientsByIDTest</span>
+                <span class="method-start">19579 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.IngredientsUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkEquality</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.RecipesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkEquality</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.IngredientsDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkEquality</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.RecipesDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkEquality</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.IngredientsUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkEqualityBetweenDifferentObjects</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">constructorWithoutId</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.RecipesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">constructorWithoutId</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.IngredientsDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">constructorWithoutId</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.RecipesDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">constructorWithoutId</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.IngredientsUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createIngredientWithId</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.IngredientsDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createIngredientWithId</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.RecipesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createRecipeWithId</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.RecipesDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createRecipeWithId</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.IngredientsUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">equalsWithDifferentObject</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.RecipesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">equalsWithDifferentObject</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.IngredientsDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">equalsWithDifferentObject</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.RecipesDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">equalsWithDifferentObject</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.IngredientsUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">equalsWithNull</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.RecipesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">equalsWithNull</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.IngredientsDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">equalsWithNull</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.RecipesDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">equalsWithNull</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.IngredientsUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">hashCodeTest</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ingredientsNamesNotEqual</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.RecipesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">nullServing</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">otherIdDifferent</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.IngredientsUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">otherIngredientsIdDifferent</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">otherIngredientsTypeDifferent</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.RecipesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">recipeNamesNotEqual</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.selenium.AppSeleniumTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">seleniumExampleTest</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.IngredientsUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">settersTest</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.domain.RecipesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">settersTest</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.IngredientsDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">settersTest</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dto.RecipesDTOUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">settersTest</span>
+                <span class="method-start">19648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.services.IngredientsServicesIntegrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createIngredientsTest</span>
+                <span class="method-start">20634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteIngredientsTest</span>
+                <span class="method-start">20634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findIngredientsByIdTest</span>
+                <span class="method-start">20634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">readIngredientsTest</span>
+                <span class="method-start">20634 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.services.IngredientsServicesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createIngredientsTest</span>
+                <span class="method-start">23854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteIngredientsByExistingId</span>
+                <span class="method-start">23854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteIngredientsByNonExistingId</span>
+                <span class="method-start">23854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findNoteById</span>
+                <span class="method-start">23854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAllIngredientsTest</span>
+                <span class="method-start">23854 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.services.RecipesServicesUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createRecipesTest</span>
+                <span class="method-start">24102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteIngredientsByNonExistingId</span>
+                <span class="method-start">24102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteRecipesByExistingId</span>
+                <span class="method-start">24102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findRecipeById</span>
+                <span class="method-start">24102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAllRecipesTest</span>
+                <span class="method-start">24102 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

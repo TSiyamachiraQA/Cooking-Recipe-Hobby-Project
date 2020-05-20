@@ -1,0 +1,667 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>64/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 20 15:09:51 BST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24278 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.selenium.AppSeleniumTest.seleniumExampleTest()'><b>seleniumExampleTest</b><br>Test class: com.qa.selenium.AppSeleniumTest</td>
+<td><div><pre>java.lang.NoClassDefFoundError: com/google/gson/JsonElement
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethod(Class.java:2128)
+	at org.openqa.selenium.json.JsonOutput.getMethod(JsonOutput.java:307)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$15(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.lambda$write$29(JsonOutput.java:260)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:261)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at java.util.TreeMap.forEach(TreeMap.java:1005)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1507)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:100)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+	at com.qa.selenium.AppSeleniumTest.setUp(AppSeleniumTest.java:19)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-NAEHOQI&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: ChromeDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 55 more
+Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonElement
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 82 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace808749428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace808749428'><pre>java.lang.NoClassDefFoundError: com/google/gson/JsonElement
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethod(Class.java:2128)
+	at org.openqa.selenium.json.JsonOutput.getMethod(JsonOutput.java:307)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$15(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.lambda$write$29(JsonOutput.java:260)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:261)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at java.util.TreeMap.forEach(TreeMap.java:1005)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1507)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:100)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+	at com.qa.selenium.AppSeleniumTest.setUp(AppSeleniumTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+	at org.testng.TestRunner$1.run(TestRunner.java:667)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:950)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:698)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-NAEHOQI&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: ChromeDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 55 more
+Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonElement
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 82 more
+</pre></div></td>
+<td>0</td>
+<td>seleniumExampleTest(com.qa.selenium.AppSeleniumTest)</td></tr>
+<tr>
+<td title='com.qa.AppTest.shouldAnswerWithTrue()'><b>shouldAnswerWithTrue</b><br>Test class: com.qa.AppTest</td>
+<td><div><pre>org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.qa.App.main(App.java:11)
+	at com.qa.AppTest.shouldAnswerWithTrue(AppTest.java:14)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1000610833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1000610833'><pre>org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.qa.App.main(App.java:11)
+	at com.qa.AppTest.shouldAnswerWithTrue(AppTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+	at org.testng.TestRunner$1.run(TestRunner.java:667)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:950)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:698)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>12</td>
+<td>shouldAnswerWithTrue(com.qa.AppTest)</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.checkEquality()'><b>checkEquality</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>checkEquality(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.RecipesUnitTest.checkEquality()'><b>checkEquality</b><br>Test class: com.qa.domain.RecipesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>checkEquality(com.qa.domain.RecipesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.IngredientsDTOUnitTest.checkEquality()'><b>checkEquality</b><br>Test class: com.qa.dto.IngredientsDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>checkEquality(com.qa.dto.IngredientsDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.RecipesDTOUnitTest.checkEquality()'><b>checkEquality</b><br>Test class: com.qa.dto.RecipesDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>checkEquality(com.qa.dto.RecipesDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.checkEqualityBetweenDifferentObjects()'><b>checkEqualityBetweenDifferentObjects</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>checkEqualityBetweenDifferentObjects(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.constructorWithoutId()'><b>constructorWithoutId</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>constructorWithoutId(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.RecipesUnitTest.constructorWithoutId()'><b>constructorWithoutId</b><br>Test class: com.qa.domain.RecipesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>constructorWithoutId(com.qa.domain.RecipesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.IngredientsDTOUnitTest.constructorWithoutId()'><b>constructorWithoutId</b><br>Test class: com.qa.dto.IngredientsDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>constructorWithoutId(com.qa.dto.IngredientsDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.RecipesDTOUnitTest.constructorWithoutId()'><b>constructorWithoutId</b><br>Test class: com.qa.dto.RecipesDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>constructorWithoutId(com.qa.dto.RecipesDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.createIngredientWithId()'><b>createIngredientWithId</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>createIngredientWithId(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.IngredientsDTOUnitTest.createIngredientWithId()'><b>createIngredientWithId</b><br>Test class: com.qa.dto.IngredientsDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>createIngredientWithId(com.qa.dto.IngredientsDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.IngredientsControllerIntegrationTest.createIngredientsTest()'><b>createIngredientsTest</b><br>Test class: com.qa.controller.IngredientsControllerIntegrationTest</td>
+<td></td>
+<td>4</td>
+<td>createIngredientsTest(com.qa.controller.IngredientsControllerIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.controller.IngredientsControllerUnitTest.createIngredientsTest()'><b>createIngredientsTest</b><br>Test class: com.qa.controller.IngredientsControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>createIngredientsTest(com.qa.controller.IngredientsControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.IngredientsServicesIntegrationTest.createIngredientsTest()'><b>createIngredientsTest</b><br>Test class: com.qa.services.IngredientsServicesIntegrationTest</td>
+<td></td>
+<td>2</td>
+<td>createIngredientsTest(com.qa.services.IngredientsServicesIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.services.IngredientsServicesUnitTest.createIngredientsTest()'><b>createIngredientsTest</b><br>Test class: com.qa.services.IngredientsServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>createIngredientsTest(com.qa.services.IngredientsServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.RecipesUnitTest.createRecipeWithId()'><b>createRecipeWithId</b><br>Test class: com.qa.domain.RecipesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>createRecipeWithId(com.qa.domain.RecipesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.RecipesDTOUnitTest.createRecipeWithId()'><b>createRecipeWithId</b><br>Test class: com.qa.dto.RecipesDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>createRecipeWithId(com.qa.dto.RecipesDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.RecipesControllerIntegrationTest.createRecipesTest()'><b>createRecipesTest</b><br>Test class: com.qa.controller.RecipesControllerIntegrationTest</td>
+<td></td>
+<td>0</td>
+<td>createRecipesTest(com.qa.controller.RecipesControllerIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.controller.RecipesControllerUnitTest.createRecipesTest()'><b>createRecipesTest</b><br>Test class: com.qa.controller.RecipesControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>createRecipesTest(com.qa.controller.RecipesControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.RecipesServicesUnitTest.createRecipesTest()'><b>createRecipesTest</b><br>Test class: com.qa.services.RecipesServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>createRecipesTest(com.qa.services.RecipesServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.IngredientsServicesUnitTest.deleteIngredientsByExistingId()'><b>deleteIngredientsByExistingId</b><br>Test class: com.qa.services.IngredientsServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>deleteIngredientsByExistingId(com.qa.services.IngredientsServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.IngredientsServicesUnitTest.deleteIngredientsByNonExistingId()'><b>deleteIngredientsByNonExistingId</b><br>Test class: com.qa.services.IngredientsServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>deleteIngredientsByNonExistingId(com.qa.services.IngredientsServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.RecipesServicesUnitTest.deleteIngredientsByNonExistingId()'><b>deleteIngredientsByNonExistingId</b><br>Test class: com.qa.services.RecipesServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>deleteIngredientsByNonExistingId(com.qa.services.RecipesServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.IngredientsControllerIntegrationTest.deleteIngredientsTest()'><b>deleteIngredientsTest</b><br>Test class: com.qa.controller.IngredientsControllerIntegrationTest</td>
+<td></td>
+<td>4</td>
+<td>deleteIngredientsTest(com.qa.controller.IngredientsControllerIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.services.IngredientsServicesIntegrationTest.deleteIngredientsTest()'><b>deleteIngredientsTest</b><br>Test class: com.qa.services.IngredientsServicesIntegrationTest</td>
+<td></td>
+<td>2</td>
+<td>deleteIngredientsTest(com.qa.services.IngredientsServicesIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.controller.IngredientsControllerUnitTest.deleteIngredientsTestFalse()'><b>deleteIngredientsTestFalse</b><br>Test class: com.qa.controller.IngredientsControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>deleteIngredientsTestFalse(com.qa.controller.IngredientsControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.RecipesControllerUnitTest.deleteIngredientsTestFalse()'><b>deleteIngredientsTestFalse</b><br>Test class: com.qa.controller.RecipesControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>deleteIngredientsTestFalse(com.qa.controller.RecipesControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.IngredientsControllerUnitTest.deleteIngredientsTestTrue()'><b>deleteIngredientsTestTrue</b><br>Test class: com.qa.controller.IngredientsControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>deleteIngredientsTestTrue(com.qa.controller.IngredientsControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.RecipesControllerUnitTest.deleteIngredientsTestTrue()'><b>deleteIngredientsTestTrue</b><br>Test class: com.qa.controller.RecipesControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>deleteIngredientsTestTrue(com.qa.controller.RecipesControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.RecipesServicesUnitTest.deleteRecipesByExistingId()'><b>deleteRecipesByExistingId</b><br>Test class: com.qa.services.RecipesServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>deleteRecipesByExistingId(com.qa.services.RecipesServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.RecipesControllerIntegrationTest.deleteRecipesTest()'><b>deleteRecipesTest</b><br>Test class: com.qa.controller.RecipesControllerIntegrationTest</td>
+<td></td>
+<td>1</td>
+<td>deleteRecipesTest(com.qa.controller.RecipesControllerIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.equalsWithDifferentObject()'><b>equalsWithDifferentObject</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>equalsWithDifferentObject(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.RecipesUnitTest.equalsWithDifferentObject()'><b>equalsWithDifferentObject</b><br>Test class: com.qa.domain.RecipesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>equalsWithDifferentObject(com.qa.domain.RecipesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.IngredientsDTOUnitTest.equalsWithDifferentObject()'><b>equalsWithDifferentObject</b><br>Test class: com.qa.dto.IngredientsDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>equalsWithDifferentObject(com.qa.dto.IngredientsDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.RecipesDTOUnitTest.equalsWithDifferentObject()'><b>equalsWithDifferentObject</b><br>Test class: com.qa.dto.RecipesDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>equalsWithDifferentObject(com.qa.dto.RecipesDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.equalsWithNull()'><b>equalsWithNull</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>equalsWithNull(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.RecipesUnitTest.equalsWithNull()'><b>equalsWithNull</b><br>Test class: com.qa.domain.RecipesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>equalsWithNull(com.qa.domain.RecipesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.IngredientsDTOUnitTest.equalsWithNull()'><b>equalsWithNull</b><br>Test class: com.qa.dto.IngredientsDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>equalsWithNull(com.qa.dto.IngredientsDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.RecipesDTOUnitTest.equalsWithNull()'><b>equalsWithNull</b><br>Test class: com.qa.dto.RecipesDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>equalsWithNull(com.qa.dto.RecipesDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.IngredientsServicesIntegrationTest.findIngredientsByIdTest()'><b>findIngredientsByIdTest</b><br>Test class: com.qa.services.IngredientsServicesIntegrationTest</td>
+<td></td>
+<td>3</td>
+<td>findIngredientsByIdTest(com.qa.services.IngredientsServicesIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.services.IngredientsServicesUnitTest.findNoteById()'><b>findNoteById</b><br>Test class: com.qa.services.IngredientsServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>findNoteById(com.qa.services.IngredientsServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.RecipesServicesUnitTest.findRecipeById()'><b>findRecipeById</b><br>Test class: com.qa.services.RecipesServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>findRecipeById(com.qa.services.RecipesServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.IngredientsControllerIntegrationTest.getAllIngredientsTest()'><b>getAllIngredientsTest</b><br>Test class: com.qa.controller.IngredientsControllerIntegrationTest</td>
+<td></td>
+<td>5</td>
+<td>getAllIngredientsTest(com.qa.controller.IngredientsControllerIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.controller.IngredientsControllerUnitTest.getAllIngredientsTest()'><b>getAllIngredientsTest</b><br>Test class: com.qa.controller.IngredientsControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>getAllIngredientsTest(com.qa.controller.IngredientsControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.IngredientsServicesUnitTest.getAllIngredientsTest()'><b>getAllIngredientsTest</b><br>Test class: com.qa.services.IngredientsServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>getAllIngredientsTest(com.qa.services.IngredientsServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.RecipesControllerIntegrationTest.getAllRecipesTest()'><b>getAllRecipesTest</b><br>Test class: com.qa.controller.RecipesControllerIntegrationTest</td>
+<td></td>
+<td>0</td>
+<td>getAllRecipesTest(com.qa.controller.RecipesControllerIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.controller.RecipesControllerUnitTest.getAllRecipesTest()'><b>getAllRecipesTest</b><br>Test class: com.qa.controller.RecipesControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>getAllRecipesTest(com.qa.controller.RecipesControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.RecipesServicesUnitTest.getAllRecipesTest()'><b>getAllRecipesTest</b><br>Test class: com.qa.services.RecipesServicesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>getAllRecipesTest(com.qa.services.RecipesServicesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.IngredientsControllerIntegrationTest.getIngredientsByID()'><b>getIngredientsByID</b><br>Test class: com.qa.controller.IngredientsControllerIntegrationTest</td>
+<td></td>
+<td>4</td>
+<td>getIngredientsByID(com.qa.controller.IngredientsControllerIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.controller.IngredientsControllerUnitTest.getIngredientsByIDTest()'><b>getIngredientsByIDTest</b><br>Test class: com.qa.controller.IngredientsControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>getIngredientsByIDTest(com.qa.controller.IngredientsControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.RecipesControllerUnitTest.getIngredientsByIDTest()'><b>getIngredientsByIDTest</b><br>Test class: com.qa.controller.RecipesControllerUnitTest</td>
+<td></td>
+<td>0</td>
+<td>getIngredientsByIDTest(com.qa.controller.RecipesControllerUnitTest)</td></tr>
+<tr>
+<td title='com.qa.controller.RecipesControllerIntegrationTest.getRecipesByID()'><b>getRecipesByID</b><br>Test class: com.qa.controller.RecipesControllerIntegrationTest</td>
+<td></td>
+<td>0</td>
+<td>getRecipesByID(com.qa.controller.RecipesControllerIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.hashCodeTest()'><b>hashCodeTest</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>hashCodeTest(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.ingredientsNamesNotEqual()'><b>ingredientsNamesNotEqual</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>ingredientsNamesNotEqual(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.RecipesUnitTest.nullServing()'><b>nullServing</b><br>Test class: com.qa.domain.RecipesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>nullServing(com.qa.domain.RecipesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.RecipesUnitTest.otherIdDifferent()'><b>otherIdDifferent</b><br>Test class: com.qa.domain.RecipesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>otherIdDifferent(com.qa.domain.RecipesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.otherIngredientsIdDifferent()'><b>otherIngredientsIdDifferent</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>otherIngredientsIdDifferent(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.otherIngredientsTypeDifferent()'><b>otherIngredientsTypeDifferent</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>otherIngredientsTypeDifferent(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.services.IngredientsServicesIntegrationTest.readIngredientsTest()'><b>readIngredientsTest</b><br>Test class: com.qa.services.IngredientsServicesIntegrationTest</td>
+<td></td>
+<td>3</td>
+<td>readIngredientsTest(com.qa.services.IngredientsServicesIntegrationTest)</td></tr>
+<tr>
+<td title='com.qa.domain.RecipesUnitTest.recipeNamesNotEqual()'><b>recipeNamesNotEqual</b><br>Test class: com.qa.domain.RecipesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>recipeNamesNotEqual(com.qa.domain.RecipesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.IngredientsUnitTest.settersTest()'><b>settersTest</b><br>Test class: com.qa.domain.IngredientsUnitTest</td>
+<td></td>
+<td>0</td>
+<td>settersTest(com.qa.domain.IngredientsUnitTest)</td></tr>
+<tr>
+<td title='com.qa.domain.RecipesUnitTest.settersTest()'><b>settersTest</b><br>Test class: com.qa.domain.RecipesUnitTest</td>
+<td></td>
+<td>0</td>
+<td>settersTest(com.qa.domain.RecipesUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.IngredientsDTOUnitTest.settersTest()'><b>settersTest</b><br>Test class: com.qa.dto.IngredientsDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>settersTest(com.qa.dto.IngredientsDTOUnitTest)</td></tr>
+<tr>
+<td title='com.qa.dto.RecipesDTOUnitTest.settersTest()'><b>settersTest</b><br>Test class: com.qa.dto.RecipesDTOUnitTest</td>
+<td></td>
+<td>0</td>
+<td>settersTest(com.qa.dto.RecipesDTOUnitTest)</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 66, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 25.245 s <<< FAILURE! - in TestSuite
+shouldAnswerWithTrue on shouldAnswerWithTrue(com.qa.AppTest)(com.qa.AppTest)  Time elapsed: 12.927 s  <<< FAILURE!
+org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+	at com.qa.AppTest.shouldAnswerWithTrue(AppTest.java:14)
+
+seleniumExampleTest on seleniumExampleTest(com.qa.selenium.AppSeleniumTest)(com.qa.selenium.AppSeleniumTest)  Time elapsed: 0.954 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/google/gson/JsonElement
+	at com.qa.selenium.AppSeleniumTest.setUp(AppSeleniumTest.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonElement
+	at com.qa.selenium.AppSeleniumTest.setUp(AppSeleniumTest.java:19)
+
