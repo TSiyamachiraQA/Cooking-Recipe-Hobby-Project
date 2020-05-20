@@ -21,7 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Fork the repository onto your own repository, clone the new repo to your PC.
 2. Open the project as a Maven project in Eclipse or other IDE.
 3. Commence with the development of the source code.
-4. To conduct unit tests, you can highlight the test class and 'Run as Jnit test' or highlight the maven project then 'Coverage as JUnit'.
+4. To conduct unit tests, you can highlight the test class and 'Run as JUnit test' or highlight the maven project then 'Coverage as JUnit'.
 
 
 ### Prerequisites
